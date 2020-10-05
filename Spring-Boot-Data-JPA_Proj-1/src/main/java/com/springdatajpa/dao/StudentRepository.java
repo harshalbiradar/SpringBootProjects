@@ -25,7 +25,7 @@ public interface StudentRepository extends JpaRepository<Student, Integer> {
 	
 	public long countByAge(int age);
 	
-	@Transactional
+	@Transactional()
 	public List<Student> deleteByName(String name);
 	
 	//multi condition
