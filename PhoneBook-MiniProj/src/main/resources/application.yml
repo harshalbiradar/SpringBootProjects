@@ -1,0 +1,42 @@
+logging:
+  level:
+    org:
+      springframework: info
+server:
+  port: 7777
+  servlet:
+    context-path: /PhoneBook-MiniProj
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  jpa:
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+      
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+      
+#phoneBook is the prefix & messages is the one map inside the map we are storing the key value
+phonebook:
+      messages:
+          saveSucc: Contact saved successfully
+          updateSucc: Contact updated successfully
+          saveFail: Failed to save contact
+          deleteSucc: Contact deleted successfully
+          deleteFail: Contact not found for delete
+          
+Logging:
+    file:
+       name: PHONEBOOK-APP.log
+          
+          
+          
+
+          

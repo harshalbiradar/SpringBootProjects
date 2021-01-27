@@ -1,0 +1,21 @@
+server:
+  port: 8765
+
+spring:
+  application:
+    name: API-GATEWAY
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9000/eureka/
+      
+zuul:
+  prefix: /api
+  routes:
+    welcome:
+      path: /api1/**
+      serviceId: WELCOME-API
+    greet:
+      path: /api2/**
+      serviceId: GREET-API

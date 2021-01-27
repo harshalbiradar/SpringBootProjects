@@ -1,0 +1,1 @@
+insert into user values(100,1,'$2a$10$l3ZSge6JyDjjTxBJ1V0Hk.UXTid3AYl/Awr50SqZtg6tjQeYEkEVm','ROLE_USER','harshal');

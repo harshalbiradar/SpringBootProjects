@@ -1,0 +1,9 @@
+server:
+  port: 9000
+  
+#8761 is the default port no for eureka server  
+#if you dont want to register your self into service registery  
+eureka:
+  client:
+    register-with-eureka: false  
+
